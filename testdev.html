@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste Dev</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style type="text/css">
+	
+.tamanho {
+	font-size: 28px;
+}
+
+.pad {
+	margin-right: 5px;
+}
+
+.pad1 {
+	margin-left: 5px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+	//motoboys
+	var moto1 = "2 pedidos de R$50.00 da loja 2";
+	var moto2 = "1 pedido da loja 2 de R$50.00, 1 pedido da loja 3 de R$100.00";
+	var moto3 = "2 pedidos da loja 3 de R$50.00";
+	var moto4  = "3 pedidos de R$50.00 da loja 1";
+	var moto5 = "1 pedido de R$50.00 da loja 2";
+	
+	// lojas
+	var loja1 = 50 + 2.5
+	var loja2 = 50 + 2.5
+	var loja3 = 50 + 7.5 
+	var loja33 = 100 + 7.5
+	
+	function funcaoboy() {
+		alert("Há um total de 5 motoboys disponíveis");
+	}
+
+	function funcaostore() {
+		alert("Há um total de 3 lojas que precisam de serviços");
+	}
+
+	function funcao1() {
+		alert("Possui " + moto1 + " e receberá R$" + (loja2 * 2));
+	}
+
+	function funcao2() {
+		alert("Possui " + moto2 + " e receberá R$" + (loja2 + loja33));
+	}
+
+	function funcao3() {
+		alert("Possui " + moto3 + " e receberá R$" + (loja3 * 2));
+	}
+
+	function funcao4() {
+		alert("Possui " + moto4 + " e receberá R$" + (loja1 * 3));
+	}
+
+	function funcao5() {
+		alert("Possui " + moto5 + " e receberá R$" + loja2);
+	}
+
+</script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top altu">
+
+	<div class="collapse navbar-collapse" id="navegacao2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link tamanho">Bem-vindo!</a>
+				</li>
+			</ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="funcaoboy()">Número de motoboys</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="funcaostore()">Número de lojas</a>
+                 
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section style="margin-top: 200px;">
+    <h1 class="display-4" style="text-align: center; margin-bottom: 60px;">Escolha o motoboy</h1>
+
+   	<div style="text-align: center;">
+
+	    <input type="button" onclick="funcao1()" value="Motoboy 1" class="btn btn-danger btn-lg pad">
+
+	    <input type="button" onclick="funcao2()" value="Motoboy 2" class="btn btn-danger btn-lg pad">
+
+	    <input type="button" onclick="funcao3()" value="Motoboy 3" class="btn btn-danger btn-lg pad">
+
+	    <input type="button" onclick="funcao4()" value="Motoboy 4" class="btn btn-danger btn-lg pad">
+
+	    <input type="button" onclick="funcao5()" value="Motoboy 5" class="btn btn-danger btn-lg pad1">
+
+	 </div>
+
+	</section>
+
+	<footer>
+		
+		  <footer style="text-align: center;
+		  margin-top: 150px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		background-color: #dc3545;
+		color: white;">
+		    Copyright © 2021 | Luiza Christine Lenser
+		  </footer>
+
+	</footer>
+
+
+</body>
+</html>
